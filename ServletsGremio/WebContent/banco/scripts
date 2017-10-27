@@ -1,0 +1,41 @@
+create table Usuario(
+		id serial primary key,
+		email varchar(50) not null,
+		senha varchar(10) not null,
+		cpf varchar(14) not null,
+		nome varchar(50) not null,
+		sobrenome varchar (50) not null,
+		sexo varchar(15) not null,
+		dataNascimento Varchar(10) not null,
+		telefone varchar(15) not null
+);
+	
+	
+	
+create table produto(
+	id serial primary key,
+	nome varchar(80) not null,
+	marca varchar(50) not null,
+	tamanho varchar(50) not null,
+	cor varchar(20) not null,
+	imagem varchar(50) not null,
+	valor double precision not null
+);
+
+create table pedido(
+	id serial primary key,
+	usuario_id integer not null,
+	produto_id integer not null,
+	quantidade integer not null,
+	valor double precision not null,
+	CONSTRAINT fk_produto_id FOREIGN KEY (produto_id) REFERENCES Produto(id),
+	CONSTRAINT fk_usuario_id FOREIGN KEY (usuario_id) REFERENCES Usuario(id)
+);
+
+insert into produto (nome, marca, tamanho, cor, imagem, valor) values ('Camisa Tricolor Masc. I 2016','Umbro', 'P', 'Tricolor', 'camisa3.JPG', 249);
+
+insert into produto (nome, marca, tamanho, cor, imagem, valor) values ('Camisa Penta Campeão Rei de Copas','Independente', 'M', 'Preta', 'camisa4.PNG', 49);
+
+insert into produto (nome, marca, tamanho, cor, imagem, valor) values ('Camisa Umbro Grêmio Retrô','Umbro', 'G', 'Tricolor', 'camisa1.jpg', 189);
+
+insert into produto (nome, marca, tamanho, cor, imagem, valor) values ('Camisa Tricolor Masc. I 2017','Umbro', 'PP', 'Tricolor', 'camisa2.PNG', 299);
