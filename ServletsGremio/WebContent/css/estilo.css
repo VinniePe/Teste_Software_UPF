@@ -406,6 +406,7 @@ p{
 .frm .form-group input[type=text],
 .frm .form-group input[type=email],
 .frm .form-group input[type=password],
+.frm .form-group input[type=number],
 .frm .form-group select{
 	width: 100%;
 	border-radius: 6px;
