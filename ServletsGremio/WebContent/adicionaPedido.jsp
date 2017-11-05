@@ -20,17 +20,17 @@
 <title>Adicionar Pedidos</title>
 
 <!-- meta tags: description, keywords, author -->
-<meta name="description" content="Produtos Oficias do Grêmio">
-<meta name="keywords" content="Grêmio, Produtos">
-<meta name="author" content="Vinícius Pedroso">
+<meta name="description" content="Produtos Oficias do GrÃªmio">
+<meta name="keywords" content="GrÃªmio, Produtos">
+<meta name="author" content="VinÃ­cius Pedroso">
 <meta http-equiv="refresh" content="30000">
 <!-- opengraph-->
 <meta property="og:locale" content="pt_BR">
 <meta property="og:url" content="index.html">
-<meta property="og:title" content="Grêmio FBPA Produtos Oficiais">
-<meta property="og:site_name" content="Grêmio FBPA">
+<meta property="og:title" content="GrÃªmio FBPA Produtos Oficiais">
+<meta property="og:site_name" content="GrÃªmio FBPA">
 <meta property="og:description"
-	content="Todos os produtos oficiais e licenciados pelo Grêmio FBPA.">
+	content="Todos os produtos oficiais e licenciados pelo GrÃªmio FBPA.">
 <meta property="og:image" content="img/logoGremio.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="800">
@@ -40,9 +40,9 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Vinnie_Pe">
-<meta name="twitter:title" content="Grêmio FBPA">
+<meta name="twitter:title" content="GrÃªmio FBPA">
 <meta name="twitter:description"
-	content="Todos os produtos oficiais e licenciados pelo Grêmio FBPA.">
+	content="Todos os produtos oficiais e licenciados pelo GrÃªmio FBPA.">
 <meta name="twitter:creator" content="@Vinnie_Pe">
 <link href="css/bootstrap.min.css" rel="stylesheet">	
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -50,17 +50,17 @@
 <body>
 	<div class="div-header">
 		<a name="topoPagina"></a>
-		<!-- Cabeçalho -->
+		<!-- CabeÃ§alho -->
 		<header class="container center">
 			<div class="div-logomarca">
-				<img alt="Logo Oficial Grêmio" width="370" height=""
+				<img alt="Logo Oficial GrÃªmio" width="370" height=""
 					src="img/logoMenu.png" />
 			</div>
 			<div class="div-slogan">
 				<img alt="Logo Umbro" width="220" height="" src="img/logoUmbro.png" />
 			</div>
 		</header>
-		<!-- Fim Cabeçalho -->
+		<!-- Fim CabeÃ§alho -->
 	</div>
 
 	<div class="container-menu-topo">
@@ -121,10 +121,10 @@
 							</option>
 							<option value="2" <% if(request.getParameter("prod").equals("2")){
 								out.print("selected");
-							} %>>Camisa Penta Campeão Rei de Copas</option>
+							} %>>Camisa Penta CampeÃ£o Rei de Copas</option>
 							<option value="3" <% if(request.getParameter("prod").equals("3")){
 								out.print("selected");
-							} %>>Camisa Umbro Grêmio Retrô</option>
+							} %>>Camisa Umbro GrÃªmio RetrÃ´</option>
 							<option value="4" <% if(request.getParameter("prod").equals("4")){
 								out.print("selected");
 							} %>>Camisa Tricolor Masc. I 2017</option>
@@ -132,7 +132,7 @@
 					</div>
 				
 					<div class="form-group">
-						<label for="quantidade">Quantidade:</label> <input type="text"  id="quantidade"  name="quantidade" required >
+						<label for="quantidade">Quantidade:</label> <input type="number"  id="quantidade"  name="quantidade" required >
 					</div>
 									
 					<div class="form-group">
@@ -159,10 +159,10 @@
 				</ul>
 			</div>
 			<div class="col w-50 txt-right">
-				<img alt="Logo Oficial Grêmio" width="70" height=""
-					src="img/logoGremio.png" /> <img alt="Logo Oficial Grêmio"
+				<img alt="Logo Oficial GrÃªmio" width="70" height=""
+					src="img/logoGremio.png" /> <img alt="Logo Oficial GrÃªmio"
 					width="100" height="" src="img/logoUmbro2.png" /> <img
-					alt="Logo Oficial Grêmio" width="100" height=""
+					alt="Logo Oficial GrÃªmio" width="100" height=""
 					src="img/logoArena.png" />
 			</div>
 		</footer>
